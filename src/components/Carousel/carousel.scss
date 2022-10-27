@@ -1,0 +1,122 @@
+.carousel {
+  margin-top: 12.5vh;
+  height: 120.7vh;
+  min-height: 767px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../img/main.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 30px;
+  }
+
+  .wrapper {
+    height: 100%;
+    .slider {
+      padding-top: 28.3vh;
+      padding-right: 2.9vw;
+
+      .slide-cont {
+        padding-left: 10%;
+        .title {
+          width: 80%;
+          font-weight: 700;
+          font-size: 2.5rem;
+          text-transform: uppercase;
+          color: #fff;
+          margin-bottom: 3%;
+
+          @media (max-width: 600px) and (min-width: 360px) {
+            font-size: 1.6rem;
+            width: 80vw;
+          }
+        }
+
+        .title0 {
+          width: 75%;
+        }
+
+        p {
+          width: 40vw;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 175%;
+          color: #fff;
+          margin-bottom: 120px;
+
+          @media (max-width: 600px) and (min-width: 360px) {
+            width: 80vw;
+            font-size: 0.7rem;
+          }
+        }
+
+        .p0 {
+          width: 50%;
+
+          @media (max-width: 600px) and (min-width: 360px) {
+            width: 80vw;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  .slick-prev::before {
+    display: flex;
+    content: url(../../img/leftArrow.png);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 3.66vw;
+    height: 7.87vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  .slick-next::before {
+    display: flex;
+    content: url(../../img/rightArrow.png);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 3.66vw;
+    height: 7.87vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+
+#dots-bg {
+  ul {
+    margin: 0;
+  }
+}
+
+#pagination-dot::before {
+  padding: 0;
+  outline: none;
+  width: 70%;
+  height: 70%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #fff;
+}
+
+#pagination-dot:focus {
+  outline: none;
+  background-color: #fff;
+  border-radius: 50%;
+}

@@ -1,0 +1,238 @@
+.header {
+  min-height: 8.4vh;
+  height: 8vh;
+  background: #0e131c;
+
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 0.7vw;
+      .address {
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+
+      .mid {
+        line-height: 2vh;
+        color: #fff;
+      }
+      .cont {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.8rem;
+        color: #fff;
+
+        .select-lang {
+          width: 5vw;
+          background-color: #0e131c;
+          padding: 5%;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          appearance: none;
+        }
+
+        .select-lang > option {
+          font-size: 1rem;
+          background-color: #fff;
+          color: #0e131c;
+        }
+
+        .select-lang > option:checked {
+          background-color: #0e131c;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .navbar {
+    min-height: 80px;
+    height: 12.3vh;
+    background-color: #f3f8ff;
+
+    .wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        @media (max-width: 600px) and (min-width: 360px) {
+          width: 130px;
+        }
+      }
+
+      .cont-wrapper {
+        display: none;
+
+        .cont {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-size: 0.8rem;
+          color: #fff;
+
+          .select-lang {
+            width: 5vw;
+            padding: 5%;
+            color: #111;
+            background-color: #f3f8ff;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            appearance: none;
+
+            @media (max-width: 600px) and (min-width: 360px) {
+              width: 35px;
+            }
+          }
+
+          .select-lang > option {
+            font-size: 1rem;
+            background-color: #fff;
+            color: #0e131c;
+          }
+
+          .select-lang > option:checked {
+            background-color: #0e131c;
+            color: #fff;
+          }
+        }
+      }
+
+      ul {
+        height: 100%;
+        list-style: none;
+        display: flex;
+        gap: 13px;
+
+        li {
+          height: 100%;
+          width: 110px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 500;
+          font-size: 1rem;
+          color: #0045a8;
+          cursor: pointer;
+        }
+
+        .li-xbtn {
+          display: none;
+        }
+
+        li:hover {
+          color: #f3f8ff;
+          background-color: #0045a8;
+        }
+      }
+    }
+    @media screen and (max-width: 900px) {
+      .wrapper {
+        .logo {
+          order: 2;
+        }
+
+        .cont-wrapper {
+          display: flex;
+          gap: 15px;
+          order: 3;
+
+          @media (max-width: 600px) and (min-width: 360px) {
+            gap: 20px;
+          }
+
+          .hamburger {
+            cursor: pointer;
+
+            @media (max-width: 600px) and (min-width: 360px) {
+              width: 35px;
+            }
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          width: 35vw;
+          order: 1;
+          position: fixed;
+          height: 100vh;
+          background-color: beige;
+          top: 0;
+          left: -100%;
+          z-index: 1;
+          padding-top: 20px;
+          transition: 0.5s all ease-in-out;
+
+          li {
+            width: fit-content;
+            height: fit-content;
+            font-size: large;
+            margin-left: 15px;
+          }
+
+          li:hover {
+            background-color: #0e131c;
+            color: #fff;
+          }
+
+          .li-xbtn {
+            display: block;
+            .xbtn {
+              width: 40px;
+              height: 40px;
+              border-radius: 5px;
+              background-color: #082559;
+              color: #fff;
+              position: absolute;
+              cursor: pointer;
+              right: 10px;
+              top: 10px;
+            }
+
+            .xbtn:hover {
+              background-color: red;
+            }
+          }
+        }
+
+        ul:before {
+          content: "Menu";
+          font-size: 1.2rem;
+          margin-left: 15px;
+          font-weight: 700;
+          color: #061b42;
+        }
+      }
+      .wrapper.active {
+        ul {
+          left: 0;
+          transition: 0.3s all linear;
+        }
+      }
+    }
+  }
+}

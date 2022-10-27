@@ -1,3 +1,11 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.font-face-gm {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 .App {
   text-align: center;
 }

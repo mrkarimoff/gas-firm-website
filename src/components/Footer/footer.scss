@@ -1,0 +1,149 @@
+.footer {
+  background: #0e131c;
+  padding-top: 11vh;
+  padding-bottom: 10vh;
+
+  .footer-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14.64vh;
+
+    @media screen and (max-width: 900px) {
+      gap: 10vw;
+    }
+
+    .footer-info {
+      p {
+        margin-top: 4.5vh;
+        max-width: 341px;
+        font-size: 1rem;
+        line-height: 180%;
+        color: #fff;
+
+        @media screen and (max-width: 900px) {
+          font-size: 0.9rem;
+          max-width: 200px;
+
+          @media (max-width: 600px) and (min-width: 360px) {
+            max-width: 230px;
+          }
+        }
+      }
+    }
+
+    .category {
+      @media (max-width: 600px) and (min-width: 360px) {
+        width: 230px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      ul {
+        margin-top: 5vh;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 12px;
+
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 150%;
+          color: #fff;
+        }
+
+        a:hover {
+          color: #0045a8;
+        }
+      }
+    }
+
+    .contact {
+      h3 {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #fff;
+        margin-bottom: 4.5vh;
+      }
+
+      .home-cont {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+
+        img {
+          margin-top: 10px;
+        }
+
+        p {
+          max-width: 296px;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 180%;
+          color: #fff;
+
+          @media screen and (max-width: 900px) {
+            max-width: 280px;
+
+            @media (max-width: 600px) and (min-width: 360px) {
+              max-width: 200px;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+
+      .phone-cont {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 3.3vh;
+        margin-bottom: 3.5vh;
+
+        p {
+          font-weight: 500;
+          font-size: 1rem;
+          color: #fff;
+        }
+      }
+
+      .email-cont {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        p {
+          font-weight: 500;
+          font-size: 1rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 15.2vh;
+    margin-bottom: 4.5vh;
+  }
+
+  .c-cont {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    p {
+      font-size: 0.8rem;
+      color: #fff;
+    }
+  }
+}

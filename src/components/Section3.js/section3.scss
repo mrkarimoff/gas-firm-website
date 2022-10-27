@@ -1,0 +1,173 @@
+.section3 {
+  padding-top: 15.7vh;
+
+  @media (max-width: 600px) and (min-width: 360px) {
+    padding-top: 9vh;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  .card-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+
+    @media (max-width: 600px) and (min-width: 360px) {
+      margin-bottom: 9vh;
+    }
+
+    @media screen and (min-width: 860px) {
+      flex-wrap: nowrap;
+      height: 74.3vh;
+    }
+
+    @media (max-width: 600px) and (min-width: 360px) {
+      flex-wrap: wrap;
+      margin-top: 9vh;
+      height: 100%;
+    }
+
+    .card2 {
+      border: 1px solid;
+      width: 40vw;
+
+      @media screen and (min-width: 860px) {
+        height: 62.67vh;
+        width: 27.08vw;
+        margin-bottom: 21.5vh;
+      }
+
+      @media (max-width: 600px) and (min-width: 360px) {
+        width: 55vw;
+        height: 50vh;
+      }
+
+      h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0e131c;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #fff;
+        min-height: 22.04vh;
+
+        @media (max-width: 600px) and (min-width: 360px) {
+          min-height: 18vh;
+        }
+      }
+
+      .p-cont {
+        display: flex;
+        justify-content: center;
+        margin-top: 7.87vh;
+
+        @media (max-width: 600px) and (min-width: 360px) {
+          margin-top: 3vh;
+        }
+
+        p {
+          width: 18.3vw;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 230%;
+          text-align: center;
+
+          @media (max-width: 600px) and (min-width: 360px) {
+            font-size: 0.9rem;
+            width: 50vw;
+          }
+
+          @media screen and (min-width: 860px) {
+            font-size: 0.9rem;
+            width: 22vw;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 860px) {
+      .card2:hover {
+        height: 74.3vh;
+
+        h3 {
+          background-color: #0045a8;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        transition: 0.3s all linear;
+      }
+    }
+  }
+
+  .asset-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6.2vw;
+    align-items: center;
+    margin-top: 11vh;
+    margin-bottom: 11vh;
+
+    @media screen and (max-width: 900px) {
+      gap: 3.7vw;
+      img {
+        width: 120px;
+      }
+    }
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.1vw;
+    margin-top: 11vh;
+    margin-bottom: 15.74vh;
+
+    @media (max-width: 600px) and (min-width: 360px) {
+      margin-bottom: 10vh;
+    }
+
+    .image-staff {
+      max-width: 370px;
+      @media (max-width: 600px) and (min-width: 360px) {
+        padding-left: 20px;
+        img {
+          width: 300px;
+        }
+      }
+
+      h5 {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+      h4 {
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: #0045a8;
+        margin-top: 4px;
+        margin-bottom: 10px;
+      }
+      p {
+        width: 29vw;
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 200%;
+        color: #777;
+
+        @media (max-width: 600px) and (min-width: 360px) {
+          width: 90%;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
