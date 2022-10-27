@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/gas-firm-website/static/css/main.883a0cd3.css",
+    "main.js": "/gas-firm-website/static/js/main.a7f47538.js",
+    "static/js/787.b26c3400.chunk.js": "/gas-firm-website/static/js/787.b26c3400.chunk.js",
+    "static/media/main.webp": "/gas-firm-website/static/media/main.d097d0ca5ee38b58ea22.webp",
+    "static/media/image4.webp": "/gas-firm-website/static/media/image4.a6659d9cf36e4bdd1ec7.webp",
+    "static/media/RedHatDisplay-Regular.ttf": "/gas-firm-website/static/media/RedHatDisplay-Regular.48bda87bb52837866926.ttf",
+    "static/media/Frame3.svg": "/gas-firm-website/static/media/Frame3.837e7761ff55ca786a28330579202d50.svg",
+    "static/media/Frame1.svg": "/gas-firm-website/static/media/Frame1.ed1ada0b0bba54096631d7e26fa6da8e.svg",
+    "static/media/slick.svg": "/gas-firm-website/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/gas-firm-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/gas-firm-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/Frame2.svg": "/gas-firm-website/static/media/Frame2.c4d6c908b739e35e7fdc1a6143311cd8.svg",
+    "static/media/slick.woff": "/gas-firm-website/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/gas-firm-website/index.html",
+    "main.883a0cd3.css.map": "/gas-firm-website/static/css/main.883a0cd3.css.map",
+    "main.a7f47538.js.map": "/gas-firm-website/static/js/main.a7f47538.js.map",
+    "787.b26c3400.chunk.js.map": "/gas-firm-website/static/js/787.b26c3400.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.883a0cd3.css",
+    "static/js/main.a7f47538.js"
+  ]
+}
